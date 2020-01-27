@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title>my web</title>
+<link rel="stylesheet" href="1.css" />
+<link>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="1donate.js"></script>
+
+	</head>
+	<body class="">
+
+	
+
+<!-- header one -->
+    <div class="header1">
+       <i style="font-size:20px;color:red"></i> <strong ><img src="images/logo2.png" style="width: 60px; height: 60px;">  Welcome to </strong> <b id="coding" onmouseover="cod()" onmouseout="co()">GIHEMBE Show</b>
+
+      
+       <label class="face">
+        <a href="https://www.facebook.com/ishara.shukuru"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.youtube.com/watch?v=AT9NKfcYxNs"><i class="fa fa-youtube"></i></a>
+        <a href="https://www.instagram.com/shukuruishara/?hl=en"><i class="fa fa-instagram"></i></a>
+      
+       <a href="1donate.html" class="apply-btn" style="color: #ff4000;font-size: 20px;">DONATE</a>
+       </label> 
+    </div>
+  <!-- end header one -->
+    
+
+<!-- donate -->
+<div class=" theme-background-white main-body">
+    <div class="col-md-12">
+      <div class="row donate-bar">  
+        <div class="col-md-4 theme-blue">
+          GIVE WHERE NEEDED MOST
+        </div>
+        <div class="col-md-8">
+          <ul class="nav navbar-nav navbar- donate-buttons" id="donate-buttons">
+            <li><a href="#">
+              <button class="btn-blue active" data-dollars='25' data-impact="Covers housing or counseling services for one person">
+                $25
+              </button>
+            </a></li>
+            <li><a href="#">
+              <button class="btn-blue" data-dollars='50' data-impact="Covers housing or counseling services for two people">
+                $50
+              </button>
+            </a></li>
+            <li><a href="#">
+              <button class="btn-blue" data-dollars='100' data-impact="Covers housing or counseling services for four people">
+                $100
+              </button>
+            </a></li>
+            <li><a href="#">
+              <button class="btn-blue" data-dollars='500' data-impact="Covers housing or counseling services for twenty people">
+                $500
+              </button>
+            </a></li>
+            <li id="other"><a href="#">
+              <button class="btn-blue-other" data-dollars='other' data-impact="Thank you!">
+                OTHER
+              </button>
+            </a></li>
+            <li id="other-input">
+              <span>$</span>
+             <input data-impact="That’s great. Thank you!">
+            </li>
+            <li><a href="#">
+              <button class="btn-green" data-toggle="modal" data-target="#myModal">
+                DONATE
+              </button>
+            </a></li>
+            <li style="display: none;"><a href="#">
+              LEARN MORE<i class="fa fa-chevron-right margin-left"></i>
+            </a></li>
+          </ul>
+          <p class="impact">
+            Covers housing or counseling services for one person
+          </p>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header well text-center theme-background-blue">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h2>You’re Donating:</h2>
+                  <h1 style="font-size: 5.5em; margin-top: 0;">$<span id="price"></span></h1>
+                  <em>Thank you!</em>
+                </div>
+                <div class="modal-body">
+                  <div class="row">  
+                    <section class="col-md-12">
+                      <form>
+                        <fieldset class="col-md-6">
+                          <legend>
+                            Your personal info
+                          </legend>
+                          <label>Your Names</label>
+                          <input type="string" class="form-control">
+                          <label>Your email</label>
+                          <input type="email" class="form-control">
+                          <label>Address</label>
+                          <input type="email" class="form-control">
+                          <label>City, State, Zip Code</label>
+                          <input type="email" class="form-control">
+                        </fieldset>
+                        <fieldset class="col-md-6">
+                          <legend>
+                            Credit Card Information
+                          </legend>
+                          <label for="card-number">Credit Card Number</label>
+                          <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="form-control card-number" id="card-number">
+                          <label for="card-number">Expiration Date</label>
+                          <input placeholder="MM/YY" pattern="[0-9]*" type="text" class="form-control card-expiration" id="card-expiration">
+                          <label for="card-number">CVV Number</label>
+                          <input placeholder="CVV" pattern="[0-9]*" type="text" class="form-control card-cvv" id="card-cvv">
+                          <label for="card-number">Billing Zip Code</label>
+                          <input placeholder="ZIP" pattern="[0-9]*" type="text" class="form-control card-zip" id="card-zip">
+                        </fieldset>
+                      </form>
+                    </section>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">BACK</button>
+                  <button type="button" class="btn-green">CONTINUE</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+        </div>
+      </div><!--/.donate-bar-->
+    </div><!-- /.col-md-12 -->
+<!-- end donate -->
+
+<!-- Footer -->
+        <footer class="">
+
+          <!-- Footer Links -->
+          <div class="container text-center text-md-left">
+             <img src="images/logo2.png" style="width: 60px; height: 60px; float: left; top: 50px;">
+
+            <!-- Grid row -->
+            <div class="row">
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+                <!-- Content -->
+                <h5 class="font-weight-bold text-uppercase mb-4">Gihembe Show Content</h5>
+                <p>Entertainment is a form of activity that holds the attention and interest of an audience or gives pleasure and delight. It can be an idea.</p>
+
+              </div>
+              <!-- Grid column -->
+
+              <hr class="clearfix w-100 d-md-none">
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+
+                <ul class="list-unstyled">
+
+                  <li>
+                    <p>
+                      <a href="#!">ABOUT US</a>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <a href="#!">PROJECTS</a>
+                    </p>
+                  </li>
+                  
+                  <li>
+                    <p>
+                      <a href="#!">EVENT</a>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <a href="#!">AWARDS</a>
+                    </p>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- Grid column -->
+
+              <hr class="clearfix w-100 d-md-none">
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+                <!-- Contact details -->
+                <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+
+                <ul class="list-unstyled">
+
+                    <a href="https://satellites.pro/Rwanda_map#-1.597110,30.076450,15"><i class="fa fa-map-marker" aria-hidden="true"></i> Gihembe Refugee Camp</a><br><br>
+
+                    <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-envelope" aria-hidden="true"></i> shukuruishara3@gmail.com</a><br><br>
+
+                    <a href=""><i class="fa fa-phone" aria-hidden="true"></i></a> +250 789 201 010<br>
+
+                    
+                </ul>
+
+              </div>
+              <!-- Grid column -->
+
+              <hr class="clearfix w-100 d-md-none">
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+                <!-- Social buttons -->
+                <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/ishara.shukuru" class="social-icon"><i class="fa fa-facebook" style="font-size: 30px;"></i></a><br><br>
+                <!-- Youtube -->
+                 <a href="https://www.youtube.com/watch?v=AT9NKfcYxNs" class="social-icon"><i class="fa fa-youtube" style="font-size: 30px;"></i></a><br><br>
+                 <!-- instagram -->
+                <a href="https://www.instagram.com/shukuruishara/?hl=en" class="social-icon"><i class="fa fa-instagram" style="font-size: 30px;"></i></a>
+
+              </div>
+              <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+          </div>
+          <!-- Footer Links -->
+
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="#"> Gihembe Show</a>
+          </div>
+          <!-- Copyright -->
+
+        </footer>        
+        <!-- Footer -->
+
+      
+			
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
